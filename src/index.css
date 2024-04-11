@@ -1,0 +1,164 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+nav {
+  padding: 2.8rem 3rem;  
+  z-index: 18;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+nav svg{
+    /* background-color: aqua; */
+    fill: #434B34;
+    /* height: 55%; */
+    scale: 0.28;
+    width: fit-content;
+    position: absolute;
+    bottom: -115%;
+    left: 0;
+    cursor: pointer ;
+}
+.navbarMenu{
+    /* outline: solid tomato; */
+    /* opacity: 0; */
+    height: 18px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4px;
+    cursor: pointer ;
+}
+.navbarMenu span {
+    height: 2px;
+    width: 40px;
+    background-color: #5b6647;
+    transition: all ease-in-out .2s;
+    
+}
+.navbarMenu:hover span {
+    opacity: .6;
+}
+.navbarMenu.active span.menuLine1 {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+.navbarMenu.active span.menuLine2 {
+    opacity: 0;
+}
+.navbarMenu.active span.menuLine3 {
+    transform: rotate(-45deg) translate(5px, -4px);
+}
+
+.navbarButtons{
+    height: 37px;
+    width: 25%;
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+}
+
+.navbarButtons .button1 {
+    /* opacity: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 55%;
+    padding: .45rem 1.2rem;
+    border: 1px solid #d4d4b9;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    /* top: -4px; */
+    transition: ease-in-out .3s;
+}
+.navbarButtons .button1 h1{
+    /* outline: solid tomato; */
+    font-weight: 500;
+    font-family: DM-Sans, sans-serif;
+    font-size: 1.2vw;
+    color: #566043;
+    text-align: center;
+    position: absolute;
+    top: 17%;
+}
+.navbarButtons .button1:hover h1{
+    top: 5%;
+    opacity: 0;
+    transition: .2s .05s cubic-bezier(.25,.46,.45,.94);
+}
+.navbarButtons .button1::after{    
+    content: "Online Check-in";
+    font-weight: 500;
+    font-family: DM-Sans, sans-serif;
+    font-size: 1.2vw;
+    opacity: 0;
+    color: #566043;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    transform: translateX(23%) translateY(45%);
+}
+.navbarButtons .button1:hover{
+    background-color: #e3e3c4;
+}
+.navbarButtons .button1:hover::after{
+    opacity: 1;
+    bottom: 47%;
+    transition: .2s .25s cubic-bezier(.25,.46,.45,.94);
+}
+
+.navbarButtons .button2 {
+    /* opacity: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    cursor: pointer;
+    padding: .45rem 1.2rem;
+    background-color: #566043;
+    border: 1px solid #566043;
+    border-radius: 50px;
+    transition: ease-in-out .3s;
+    position: relative;
+    /* top: -4px; */
+}
+.navbarButtons .button2 h1{
+    position: absolute;
+    top: 17%;
+    font-weight: 500;
+    font-family: DM-Sans, sans-serif;
+    font-size: 1.2vw;
+    color: #F7F7EE;
+}
+.navbarButtons .button2:hover h1{
+    top: 30%;
+    opacity: 0;
+    transition: .2s .05s cubic-bezier(.25,.46,.45,.94);
+}
+.navbarButtons .button2::after{    
+    content: "Book now";
+    font-weight: 500;
+    font-family: DM-Sans, sans-serif;
+    font-size: 1.2vw;
+    opacity: 0;
+    color: #F7F7EE;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    transform: translateX(35.5%) translateY(50%);
+}
+.navbarButtons .button2:hover{
+    background-color: #434b34;
+}
+.navbarButtons .button2:hover::after{
+    opacity: 1;
+    bottom: 50%;
+    transition: .2s .25s cubic-bezier(.25,.46,.45,.94);
+}
