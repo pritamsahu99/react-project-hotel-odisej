@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'DM-Sans': ['DM-Sans', 'sans-serif'],
-        'PP-Woodland': ['PP Woodland', 'serif'],
+        'DM-Sans': ['DM-Sans', "sans-serif"],
+        'PP-Woodland': ['PP Woodland', 'sans-serif'],
       },
     },
   },

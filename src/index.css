@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 nav {
-  padding: 2.8rem 3rem;  
+  padding: 2.5rem 3rem;  
   z-index: 18;
   height: 70px;
   display: flex;
@@ -11,21 +11,27 @@ nav {
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  transition: all .25s ease-in;
+  /* filter: blur(2px); */
 }
+
+
 nav svg{
-    /* background-color: aqua; */
+    opacity: 0;
     fill: #434B34;
     /* height: 55%; */
-    scale: 0.28;
+    scale: 0.29;
     width: fit-content;
     position: absolute;
     bottom: -115%;
     left: 0;
     cursor: pointer ;
 }
+
+
 .navbarMenu{
     /* outline: solid tomato; */
-    /* opacity: 0; */
+    opacity: 0;
     height: 18px;
     width: max-content;
     display: flex;
@@ -55,16 +61,18 @@ nav svg{
     transform: rotate(-45deg) translate(5px, -4px);
 }
 
+
 .navbarButtons{
     height: 37px;
     width: 25%;
+    font-family: DM-Sans, sans-serif;
     display: flex;
     column-gap: 10px;
     position: relative;
 }
 
 .navbarButtons .button1 {
-    /* opacity: 0; */
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +89,6 @@ nav svg{
 .navbarButtons .button1 h1{
     /* outline: solid tomato; */
     font-weight: 500;
-    font-family: DM-Sans, sans-serif;
     font-size: 1.2vw;
     color: #566043;
     text-align: center;
@@ -96,26 +103,25 @@ nav svg{
 .navbarButtons .button1::after{    
     content: "Online Check-in";
     font-weight: 500;
-    font-family: DM-Sans, sans-serif;
     font-size: 1.2vw;
     opacity: 0;
     color: #566043;
     position: absolute;
     left: 0;
     bottom: 12px;
-    transform: translateX(23%) translateY(45%);
+    transform: translateX(23.1%) translateY(45%);
 }
 .navbarButtons .button1:hover{
     background-color: #e3e3c4;
 }
 .navbarButtons .button1:hover::after{
     opacity: 1;
-    bottom: 47%;
-    transition: .2s .25s cubic-bezier(.25,.46,.45,.94);
+    bottom: 49%;
+    transition: .2s .2s cubic-bezier(.25,.46,.45,.94);
 }
 
 .navbarButtons .button2 {
-    /* opacity: 0; */
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +139,6 @@ nav svg{
     position: absolute;
     top: 17%;
     font-weight: 500;
-    font-family: DM-Sans, sans-serif;
     font-size: 1.2vw;
     color: #F7F7EE;
 }
@@ -145,7 +150,6 @@ nav svg{
 .navbarButtons .button2::after{    
     content: "Book now";
     font-weight: 500;
-    font-family: DM-Sans, sans-serif;
     font-size: 1.2vw;
     opacity: 0;
     color: #F7F7EE;
@@ -160,5 +164,6 @@ nav svg{
 .navbarButtons .button2:hover::after{
     opacity: 1;
     bottom: 50%;
-    transition: .2s .25s cubic-bezier(.25,.46,.45,.94);
+    transition: .2s .23s cubic-bezier(.25,.46,.45,.94);
 }
+
