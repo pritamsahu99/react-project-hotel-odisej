@@ -79,7 +79,7 @@ const Page5 = () => {
           <div className="swiper-pagination text-sm "></div>
         
           <div className="swiper-button-next group z-[99] bg-[#5b6647] rounded-full translate-x-2 -translate-y-2 hover:bg-[#434b34] py-6 rotate-90">
-            <i className="ri-arrow-right-line text-[#f7f7ee] text-base absolute group-hover:duration-200 group-hover:ease-linear font-medium opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-[0]
+            <i className="ri-arrow-right-line text-[#f7f7ee] text-base absolute group-hover:duration-200 group-hover:ease-linear font-medium opacity-0 group-hover:opacity-100 -translate-y-3 group-hover:translate-y-[0]
             group-hover:delay-150 -rotate-90"></i>
             <i
               className="ri-arrow-right-line text-base text-[#f7f7ee] absolute font-medium group-hover:opacity-0 group-hover:-translate-y-3
@@ -87,7 +87,7 @@ const Page5 = () => {
             ></i>
           </div>
           <div className="swiper-button-prev group z-[99] bg-[#5b6647] rounded-full -translate-x-2 -translate-y-2 hover:bg-[#434b34] py-6 rotate-90">
-            <i className="ri-arrow-left-line text-[#f7f7ee] text-base absolute  group-hover:duration-200 group-hover:ease-linear font-medium opacity-0 group-hover:opacity-100 -translate-y-3 group-hover:translate-y-[0] 
+            <i className="ri-arrow-left-line text-[#f7f7ee] text-base absolute  group-hover:duration-200 group-hover:ease-linear font-medium opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-[0] 
             group-hover:delay-150
             -rotate-90"></i>
             <i

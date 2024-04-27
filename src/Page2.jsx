@@ -60,7 +60,7 @@ const Page2 = () => {
           data-scroll-speed={0}
           className="page2 project-component min-h-screen w-full bg-[#5b6647] py-[15vw] flex flex-col items-center justify-center relative">
           <svg
-            className="h-full w-full absolute -top-[14rem]"
+            className="h-full w-full absolute -top-[14rem] "
             viewBox="0 0 1397 716"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

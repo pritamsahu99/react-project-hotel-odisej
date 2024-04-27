@@ -93,7 +93,9 @@ const Page3 = () => {
                   <span className="bg-[#566043]  group-hover:bg-[#434b34] py-[13px] px-6 rounded-full font-PP-Woodland relative flex items-center justify-center">
                     <i className="ri-arrow-right-line text-[#f7f7ee] text-base absolute  group-hover:duration-200 
                     group-hover:delay-150
-                    group-hover:ease-linear font-medium opacity-0 group-hover:opacity-100 -translate-x-3 group-hover:translate-x-[0] "></i>
+                    group-hover:ease-linear font-medium opacity-0 group-hover:opacity-100 
+                    translate-x-3 
+                    group-hover:translate-x-[0] "></i>
                     <i
                       className="ri-arrow-right-line text-base text-[#f7f7ee] absolute font-medium group-hover:opacity-0 group-hover:translate-x-3
                       group-hover:duration-200 group-hover:ease-linear "
@@ -102,7 +104,7 @@ const Page3 = () => {
                 </h2>
               </div>
             </div>
-            <div className="img1 absolute bottom-12 rounded-2xl overflow-hidden">
+            <div className="img1 absolute bottom-12 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
               <img
                 src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/211/ALH_Odisej_Rosemary_suite_05-scaled-800x0.jpg"
                 alt=""
@@ -112,14 +114,14 @@ const Page3 = () => {
           <div className="rightSide relative h-full w-[45vw] flex flex-col">
             <div
               className="img2 absolute 
-              rounded-2xl overflow-hidden"
+              rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 ease-in overflow-hidden"
             >
               <img
                 src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/213/ALH_Odisej_deluxe_seaview_balcony_double_01-scaled-800x0.jpg"
                 alt=""
               />
             </div>
-            <div className="img3 bg-slate-300 absolute h-64 w-64 rounded-2xl overflow-hidden -bottom-16 left-0 ">
+            <div className="img3 bg-slate-300 absolute h-64 w-64 rounded-2xl overflow-hidden -bottom-16 left-0 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
               <img className="object-cover h-full w-full" src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg" alt="" />
             </div>
           </div>

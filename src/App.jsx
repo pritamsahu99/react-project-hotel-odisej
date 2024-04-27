@@ -34,14 +34,24 @@ const App = () => {
     gsap.set(".project-component", { opacity: 0 });
     const loaderAnimation = () => {
       let tl = gsap.timeline();
-      tl.to("nav svg", {
+      tl.to(
+        ".page1 img",{
+        filter: "blur(0)",
+        transform: "scale(1)",
+        borderRadius: "0",
+        duration: 1.5,
+        delay: 1.15,
+        ease: "power3.out",
+        onComplete: showProjectComponents
+      }, "pageanime")
+      .to("nav svg", {
         y: '38%',
         opacity: 1,
-        delay: .85,
+        delay: 1,
         duration: 0.75,
         ease: "power1.out",
-    
-      }).to(
+      }, "pageanime")
+      .to(
         ".navbarMenu",{
         opacity: 1,
         transform: "translateY(4px)",
@@ -57,15 +67,7 @@ const App = () => {
         stagger: 0.1,
         duration: .25,
       })
-      gsap.to(
-        ".page1 img",{
-        transform: "scale(1)",
-        borderRadius: "0",
-        duration: 1.5,
-        delay: 1.15,
-        ease: "power3.out",
-        onComplete: showProjectComponents
-      })
+      
       
     };
     loaderAnimation();

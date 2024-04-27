@@ -20,22 +20,6 @@ const Page1 = () => {
     } 
     page1Overlay();
 
-    // ScrollTrigger.create({
-    //   scroller: "body",
-    //   trigger: '.page1',
-    //   start: 'bottom 30%',
-    //   onToggle: ({ isActive }) => {
-    //     const el = document.querySelector('.page1');
-    //     if (isActive) {
-    //       el.setAttribute('data-scroll-speed', '-0.10');
-    //     } else {
-    //       el.setAttribute('data-scroll-speed', '-0.35');
-    //     }
-    //     console.log(`isActive: ${isActive}`);
-    //   },
-    //   markers: true,
-    // });
-
   }, []);
 
   return (
@@ -43,7 +27,7 @@ const Page1 = () => {
       data-scroll
       data-scroll-speed={-0.32}
       className="page1 h-screen w-full relative">
-        <img className='filter contrast-100 w-full h-full object-cover object-center scale-50 rounded-3xl' loading="lazy" src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/209/ALH_Odisej_exterior_aerial_07-scaled-1920x0.jpg"/>
+        <img className='filter contrast-100 blur-[2px] w-full h-full object-cover object-center scale-50 rounded-3xl' loading="lazy" src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/209/ALH_Odisej_exterior_aerial_07-scaled-1920x0.jpg"/>
         <div data-scroll className="overlay w-full h-screen absolute top-0"></div>
     </div>
   )
