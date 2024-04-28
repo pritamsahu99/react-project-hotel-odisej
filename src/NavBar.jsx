@@ -7,12 +7,12 @@ const NavBar = () => {
   const toggleActive = () => {
     setIsActive(!isActive);
   };
-  // const hideInnerOverlay = () => { 
-  //   gsap.set(".inner-overlay", { visibility: "hidden" });
-  // };
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const tl = gsap.timeline({
+   gsap.to("nav svg", {
+      top: "-47vh",
+      scale: 0.15,
+      duration: 3,
       scrollTrigger: {
         scroller: "body",
         trigger: "nav svg",
@@ -24,7 +24,7 @@ const NavBar = () => {
           if (isActive) {
             gsap.to("nav", {
               // top: "-100vh",
-              filter: "blur(0)",
+              // filter: "blur(0)",
               backgroundColor: "#F7F7EE",
               borderWidth: "0.5px", 
               borderBottomColor: "#d4d4b9ca", 
@@ -41,19 +41,16 @@ const NavBar = () => {
         },
       },
     })
-    tl.to("nav svg", {
-      top: "-47vh",
-      scale: 0.15,
-      duration: 3,
-    })
-    .to(".inner-overlay", {
-      visibility: "hidden"
-    });
+    // .to(".inner-overlay", {
+    //   visibility: "hidden"
+    // });
+    
+    
   }, []);
 
   return (
     <nav>
-      <div className="inner-overlay opacity-0 h-[50px] w-[93%] bg-red-300 absolute z-50"></div>
+      {/* <div className="inner-overlay opacity-0 h-[50px] w-[93%] bg-red-300 absolute z-50"></div> */}
       <div
         className={`navbarMenu ${isActive ? "active" : ""}`}
         onClick={toggleActive}

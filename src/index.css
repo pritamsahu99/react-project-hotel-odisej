@@ -12,7 +12,7 @@ nav {
   position: fixed;
   width: 100%;
   transition: all .25s ease-in;
-  filter: blur(1px);
+  /* filter: blur(1px); */
 }
 
 
@@ -23,7 +23,7 @@ nav svg{
     scale: 0.29;
     width: fit-content;
     position: absolute;
-    bottom: -120%;
+    bottom: -115%;
     left: 0;
     cursor: pointer ;
 }
