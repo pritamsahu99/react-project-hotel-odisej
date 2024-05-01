@@ -8,8 +8,9 @@ const NavBar = () => {
     setIsActive(!isActive);
   };
   useEffect(() => {
+    const mobile = window.matchMedia('(max-width: 480px)');
     gsap.registerPlugin(ScrollTrigger);
-   gsap.to("nav svg", {
+    gsap.to("nav svg", {
       top: "-47vh",
       scale: 0.15,
       duration: 3,
@@ -44,8 +45,24 @@ const NavBar = () => {
     // .to(".inner-overlay", {
     //   visibility: "hidden"
     // });
-    
-    
+    function mobileAnimation() {
+      gsap.to("nav svg", {
+        top: "-15vh",
+        scale: 0.25,
+        duration: 3,
+        scrollTrigger: {
+          scroller: "body",
+          trigger: "nav svg",
+          scrub: 0.3,
+          // markers: true,
+          start: "bottom 20%",
+        }
+      })
+    }
+    if (mobile.matches) {
+      mobileAnimation();
+    }
+        
   }, []);
 
   return (

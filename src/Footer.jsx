@@ -11,8 +11,8 @@ const Footer = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M391.76 206.372C398.561 257.577 422.989 333.816 564.264 307.142C623.961 295.87 672.971 246.349 725.851 192.917C798.112 119.9 877.602 39.5799 1001.47 39.5799C1020.03 39.5799 1045.16 44.9126 1072.57 50.73C1117.77 60.2253 1171.78 75.3692 1217.1 58.8446C1235.02 52.3131 1251.54 29.2773 1269.26 0H1440V757.5C1409.35 752.861 1330.28 742.392 1297.5 780H962.5C1253.14 611 992 438 927 557.5C901.437 604.497 858 780 629.5 780H0V0H234.397C255.086 12.6598 283.808 20.9856 336.62 15.677C379.328 15.677 422.989 38.5147 422.989 81.0731C422.989 99.9999 415.468 116.747 407.713 134.014C398.519 158.147 388.212 179.658 391.76 206.372Z"
           fill="url(#liner-grad-29)"
         ></path>
@@ -25,15 +25,15 @@ const Footer = () => {
             y2="461.887"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#043F5D"></stop>
-            <stop offset="1" stop-color="#022B40"></stop>
+            <stop stopColor="#043F5D"></stop>
+            <stop offset="1" stopColor="#022B40"></stop>
           </linearGradient>
         </defs>
       </svg>
       <div className="footer-conatiner h-full w-full font-DM-Sans absolute top-0 flex flex-col justify-evenly items-center">
         <div className="h-[18vh] w-[90%] relative mt-12 flex items-center">
           <svg
-            className="u-icon u-icon--logo-footer scale-[0.3] ml-14"
+            className="logo scale-[0.5] md:scale-[0.3] ml-14"
             viewBox="0 0 312 96"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +53,8 @@ const Footer = () => {
             alt=""
           />
         </div>
-        <div className="h-[8vh] w-[90%] border-b border-white border-opacity-20 my-20">
-          <div className="contact-details flex justify-between text-lg  text-[#f7f7ee]">
+        <div className="h-[20vh] md:h-[8vh] w-[90%] border-b border-white border-opacity-20 my-20">
+          <div className="contact-details md:flex justify-between text-lg text-[#f7f7ee]">
             <h1 className="hover:text-[#f7f7eeb5] duration-75 ease-in">
               POMENA 16, 20226, POMENA, CROATIA
             </h1>

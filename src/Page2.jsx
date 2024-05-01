@@ -60,7 +60,7 @@ const Page2 = () => {
           data-scroll-speed={0}
           className="page2 project-component min-h-screen w-full bg-[#5b6647] py-[15vw] flex flex-col items-center justify-center relative">
           <svg
-            className="h-full w-full absolute -top-[14rem] "
+            className="h-full w-full absolute -top-[11.3rem] md:-top-[14rem] "
             viewBox="0 0 1397 716"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const Page2 = () => {
               fill="url(#shape1)"
             ></path>
           </svg>
-          <div className="-tracking-[1px] font-PP-Woodland text-[5.5vw] leading-[6.2vw] font-medium text-[#434b34] z-10 text-center">
+          <div className="-tracking-[1px] font-PP-Woodland text-[8vw] md:text-[5.5vw] leading-[1.2] md:leading-[6.2vw] font-medium text-[#434b34] z-10 text-center">
             <h1>Set within the</h1>
             <h1>verdant pine and</h1>
             <h1>oak tree forest of</h1>

@@ -29,3 +29,13 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 480px) {
+  .swiper-slide img {
+    height: 60%;
+    transform: scale(0.6) translateX(-60%) translateY(100%);
+  }
+  .swiper-slide-active img {
+    transform: scale(1) translateX(5%) translateY(40%);
+  }
+}
