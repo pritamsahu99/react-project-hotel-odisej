@@ -8,7 +8,7 @@ const NavBar = () => {
     setIsActive(!isActive);
   };
   useEffect(() => {
-    const mobile = window.matchMedia('(max-width: 480px)');
+    const mobile = window.matchMedia('(max-width: 374px)');
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("nav svg", {
       top: "-47vh",
@@ -47,8 +47,8 @@ const NavBar = () => {
     // });
     function mobileAnimation() {
       gsap.to("nav svg", {
-        top: "-15vh",
-        scale: 0.25,
+        top: "-10vh",
+        scale: 0.3,
         duration: 3,
         scrollTrigger: {
           scroller: "body",

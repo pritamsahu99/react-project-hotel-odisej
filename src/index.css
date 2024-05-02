@@ -160,7 +160,7 @@ nav svg {
   transition: 0.2s 0.23s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   nav {
     height: 20px;
     padding: 1.6rem 1rem;
@@ -169,7 +169,7 @@ nav svg {
   .navbarButtons {
     height: 40px;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: end;
   }
   .navbarButtons .button1 {
@@ -177,21 +177,55 @@ nav svg {
   }
   .navbarButtons .button1,
   .navbarButtons .button2 {
-    width: 80%;
-    padding: 1rem;
+    width: 60%;
+    padding: 1.2rem;
+    
   }
 
-  .navbarButtons .button1 h1,
-  .navbarButtons .button1::after,
   .navbarButtons .button2 h1,
   .navbarButtons .button2::after {
-    font-size: 3vw;
+    top: 15%;
+    font-size: 2.3vw;
   }
   .navbarButtons .button2::after {
-    transform: translateX(17%) translateY(51%);
+    transform: translateX(19%) translateY(30%);
   }
+  .navbarButtons .button2:hover::after {
+    bottom: 85%;
+  }
+  
   nav svg {
     scale: 0.4;
     bottom: -180%;
   }
 }
+@media only screen and (max-width: 374px) {
+ 
+  .navbarButtons {
+    align-items: center;
+  }
+  .navbarButtons .button1 {
+    display: none;
+  }
+  .navbarButtons .button2 {
+    width: 100%;
+    padding: 0.9rem 1.8rem;
+    
+  }
+  .navbarButtons .button2 h1,
+  .navbarButtons .button2::after {
+    top: 20%;
+    font-size: 3.2vw;
+  }
+  .navbarButtons .button2::after {
+    transform: translateX(26%) translateY(40%);
+  }
+  .navbarButtons .button2:hover::after {
+    bottom: 85%;
+  }  
+  nav svg {
+    scale: 0.4;
+    bottom: -180%;
+  }
+}
+  

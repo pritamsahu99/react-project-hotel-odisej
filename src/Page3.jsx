@@ -75,7 +75,7 @@ const Page3 = () => {
   return (
     <div className="page3 project-component min-h-screen w-full bg-[#F7F7EE]">
       <div className="h-[180vh] py-24">
-        <div className="-tracking-[1px] mb-20 font-PP-Woodland text-[8vw] md:text-[5.5vw] leading-[1.2] md:leading-[6.2vw] font-medium text-[#E3E3C4] z-10 text-center">
+        <div className="-tracking-[1px] mb-20 font-PP-Woodland max-md:text-[8vw] md:text-[5.5vw] leading-[1.2] md:leading-[6.2vw] font-medium text-[#E3E3C4] z-10 text-center">
           <h1>Sweeping view of the</h1>
           <h1>Adriatic in your Room</h1>
         </div>
@@ -104,7 +104,7 @@ const Page3 = () => {
                 </h2>
               </div>
             </div>
-            <div className="img1 absolute -bottom-44 md:bottom-12 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
+            <div className="img1 absolute max-md:-bottom-28 md:bottom-12 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
               <img
                 src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/211/ALH_Odisej_Rosemary_suite_05-scaled-800x0.jpg"
                 alt=""
@@ -113,7 +113,7 @@ const Page3 = () => {
           </div>
           <div className="rightSide relative h-full w-[45vw] flex flex-col">
             <div
-              className="img2 absolute -bottom-10 md:top-0 w-[40vw] md:h-[56%]
+              className="img2 absolute max-md:bottom-14 md:top-0 w-[40vw] md:h-[56%]
               rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 ease-in overflow-hidden"
             >
               <img
@@ -121,7 +121,7 @@ const Page3 = () => {
                 alt=""
               />
             </div>
-            <div className="img3 bg-red-500 absolute md:h-64 w-[40vw] md:w-64 rounded-2xl overflow-hidden -bottom-10 md:-bottom-16 left-[13rem] md:left-0 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
+            <div className="img3 bg-red-500 absolute md:h-64 w-[40vw] md:w-64 rounded-2xl overflow-hidden max-md:bottom-14 md:-bottom-16 max-md:left-[10rem] md:left-0 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
               <img className="object-cover h-full w-full" src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg" alt="" />
             </div>
           </div>

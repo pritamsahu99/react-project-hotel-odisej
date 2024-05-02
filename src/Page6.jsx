@@ -34,7 +34,7 @@ const Page6 = () => {
 
   return (
     <div className="page6 project-component bg-[#F7F7EE] min-h-screen w-full ">
-      <div className="-tracking-[1px] font-PP-Woodland text-[8vw] md:text-[5.5vw] leading-[1.2] md:leading-[6.2vw] font-medium text-[#E3E3C4] z-10 text-center py-[12vw]">
+      <div className="-tracking-[1px] font-PP-Woodland max-md:text-[9vw] md:text-[5.5vw] leading-[1.2] md:leading-[6.2vw] font-medium text-[#E3E3C4] z-10 text-center py-[12vw]">
         <h1>Surrender yourself</h1>
         <h1>to the silent solitude</h1>
         <h1>of the wild, or set off</h1>

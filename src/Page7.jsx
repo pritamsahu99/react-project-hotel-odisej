@@ -52,7 +52,7 @@ const Page7 = () => {
   return (
     <div className="page7 project-component h-screen w-full bg-[#F7F7EE] relative overflow-hidden py-10">
       <div className="h-full w-full flex items-center justify-between">
-        <div className="leftSide h-[80%] md:h-[100%] w-[30%] md:w-[46%] overflow-hidden rounded-r-3xl">
+        <div className="leftSide max-md:h-[80%] md:h-[100%] max-md:w-[30%] md:w-[46%] overflow-hidden rounded-r-3xl">
           <img
             loading="lazy"
             className="h-full w-full object-cover object-center"
@@ -60,8 +60,8 @@ const Page7 = () => {
             alt=""
           />
         </div>
-        <div className="center absolute top-0 left-[20%] md:left-[35%] h-full w-[60%] md:w-[30%] flex flex-col items-center justify-center gap-12">
-          <h1 className="font-PP-Woodland text-4xl md:text-7xl text-center text-[#434b34]">
+        <div className="center absolute top-0 max-md:left-[20%] md:left-[35%] h-full max-md:w-[60%] md:w-[30%] flex flex-col items-center justify-center gap-12">
+          <h1 className="font-PP-Woodland max-md:text-4xl md:text-7xl text-center text-[#434b34]">
             Relaxing treatments
           </h1>
           <p className="font-DM-Sans text-[#5b6647] w-full text-center leading-5 ">
@@ -86,7 +86,7 @@ const Page7 = () => {
             </h2>
           </div>
         </div>
-        <div className="rightSide h-[80%] md:h-[100%] w-[30%] md:w-[46%] overflow-hidden rounded-l-3xl">
+        <div className="rightSide max-md:h-[80%] md:h-[100%] max-md:w-[30%] md:w-[46%] overflow-hidden rounded-l-3xl">
           <img
             loading="lazy"
             className="h-full w-full object-cover object-center"
