@@ -15,38 +15,37 @@ const Page7 = () => {
         scrub: 0.3,
       },
     });
-    tl1
-      .to(
+    tl1.to(
         ".leftSide",
         {
           transform: "translateX(-50%)",
-          duration: 100,
-          ease: "power1.in",
+          duration: 300,
+          ease: "power4.in",
         },
         "scroll-horizontal"
       )
-      .to(
+      tl1.to(
         ".rightSide",
         {
           transform: "translateX(50%)",
-          duration: 100,
-          ease: "power1.in",
+          duration: 300,
+          ease: "power4.in",
         },
         "scroll-horizontal"
       )
       .from(".center", {
         y: 10,
         opacity: 0,
-        duration: 20,
+        duration: 50,
         delay: 2,
-        ease: "power1.in",
-      })
+        ease: "power3.in",
+      },"-=5")
       .from(".exploreWellnessBtn", {
         opacity: 0,
         y: 40,
-        duration: 20,
-        ease: "power1.in",
-      });
+        duration: 50,
+        ease: "power3.in",
+      },"-=5");
   }, []);
 
   return (

@@ -35,7 +35,7 @@ const Page5 = () => {
 
   }, []);
   return (
-    <div className="swiperwrapper project-component h-screen w-full bg-[#F7F7EE] font-DM-Sans relative ">
+    <div className="page5 swiperwrapper project-component h-screen w-full bg-[#F7F7EE] font-DM-Sans relative ">
       <Swiper
         className="w-full h-[85%]"
         modules={[Pagination, Navigation]}

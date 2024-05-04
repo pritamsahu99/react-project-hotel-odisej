@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     
   return (
-    <div className="final-page-footer project-component min-h-screen w-full bg-[#03364F] relative overflow-hidden">
+    <div className="footer project-component min-h-screen w-full bg-[#03364F] relative overflow-hidden">
       <svg
         className="u-icon u-icon--shape-blue-1"
         viewBox="0 0 1440 780"

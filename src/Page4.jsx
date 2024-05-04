@@ -2,7 +2,7 @@ import React from "react";
 import RoomListData from "./RoomListData";
 const Page4 = () => {
   return (
-    <div className="min-h-screen w-full">
+    <div className="page4 min-h-screen w-full">
       <RoomListData />
     </div>
   );

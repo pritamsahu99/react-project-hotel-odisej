@@ -20,12 +20,12 @@ const Page3 = () => {
     tl1.from(".img2", {
       opacity: 0,
       y:40,
-      duration:2,
+      duration:5,
       ease: "power1.in",
     },'a').from(".leftSideTexts", {
       opacity: 0,
       y:30,
-      duration:2,
+      duration:5,
       ease: "power1.in",
     },'a').from(".exploreBtn",{
       opacity: 0,
@@ -121,7 +121,7 @@ const Page3 = () => {
                 alt=""
               />
             </div>
-            <div className="img3 bg-red-500 absolute md:h-64 w-[40vw] md:w-64 rounded-2xl overflow-hidden max-md:bottom-14 md:-bottom-16 max-md:left-[10rem] md:left-0 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
+            <div className="img3 bg-red-500 absolute md:h-64 w-[40vw] md:w-72 rounded-2xl overflow-hidden max-md:bottom-14 md:-bottom-4 max-md:left-[10rem] md:left-0 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in ">
               <img className="object-cover h-full w-full" src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg" alt="" />
             </div>
           </div>
