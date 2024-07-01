@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Page1 = () => {
  
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const page1Overlay = () => {
       gsap.to('.page1 .overlay',{
         backgroundColor: "#f7f7eed3",

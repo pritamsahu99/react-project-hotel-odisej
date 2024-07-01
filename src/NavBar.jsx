@@ -92,13 +92,15 @@ const NavBar = () => {
           ></path>
         </svg>
       </div>
-      <div className="navbarButtons">
-        <button type="button" className="button1">
-          <h1>Online Check-in</h1>
-        </button>
-        <button type="button" className="button2">
-          <h1>Book now</h1>
-        </button>
+      <div className="navbarButtons w-fit flex h-10 gap-3">
+      <div className='cursor-pointer group relative text-[#566043] rounded-full border-[1.5px] border-[#d4d4b9] duration-300 hover:bg-[#e3e3c4] px-6 py-2 overflow-hidden'>
+        <h1 className='group-hover:-translate-y-2 group-hover:opacity-0 group-hover:duration-300'>Online Check-In</h1>
+        <h1 className='absolute top-2 text-[#566043] px-6 py-2 whitespace-nowrap group-hover:opacity-100 opacity-0 group-hover:rounded-none rounded-full group-hover:duration-200 group-hover:delay-300 group-hover:top-0 left-0'>Online Check-In</h1>
+    </div>
+        <div className='cursor-pointer group relative text-[#FCF8F3] rounded-full border-[.5px] duration-500 hover:bg-[#434b34] overflow-hidden border-[#434b345d] bg-[#566043] px-6 py-2'>
+        <h1 className='group-hover:-translate-y-2 group-hover:opacity-0 group-hover:duration-300 relative'>Book Now</h1>
+        <h1 className='absolute top-2 text-[#FCF8F3]  group-hover:opacity-100 opacity-0 group-hover:duration-200 group-hover:delay-300 group-hover:top-0 left-0 px-6 py-2 '>Book Now</h1>
+        </div> 
       </div>
     </nav>
   );

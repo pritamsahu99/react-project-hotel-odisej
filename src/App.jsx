@@ -2,7 +2,6 @@ import React, {useEffect,useRef} from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LocomotiveScroll from 'locomotive-scroll';
-const locomotiveScroll = new LocomotiveScroll();
 import "./index.css"
 import NavBar from './NavBar';
 import Page1 from './Page1';
@@ -14,6 +13,7 @@ import Page6 from './Page6';
 import Page7 from './Page7';
 import Footer from './Footer';
 
+const locomotiveScroll = new LocomotiveScroll();
 const App = () => {
   const scrollRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
@@ -24,7 +24,6 @@ const App = () => {
       smooth: true,
       smoothMobile: true,
       horizontal: true, 
-
     });
     const showProjectComponents = () => { 
       gsap.set("body", { overflow: "auto" });

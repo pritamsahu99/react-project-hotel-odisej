@@ -58,14 +58,14 @@ nav svg {
 }
 
 .navbarButtons {
-  height: 37px;
-  width: 25%;
+  /* height: 37px; */
+  /* width: 35%; */
   font-family: DM-Sans, sans-serif;
-  display: flex;
+  /* display: flex;
   column-gap: 10px;
-  position: relative;
+  position: relative; */
 }
-.navbarButtons .button1 {
+/* .navbarButtons .button1 {
   opacity: 0;
   display: flex;
   align-items: center;
@@ -77,11 +77,11 @@ nav svg {
   border-radius: 50px;
   position: relative;
   cursor: pointer;
-  /* top: -4px; */
+  top: -4px;
   transition: all 0.3s ease-in-out;
 }
 .navbarButtons .button1 h1 {
-  /* outline: solid tomato; */
+  outline: solid tomato;
   font-weight: 500;
   font-size: 1.2vw;
   color: #566043;
@@ -126,7 +126,7 @@ nav svg {
   border: 1px solid #566043;
   border-radius: 50px;
   position: relative;
-  /* top: -4px; */
+  top: -4px;
   transition: all 0.3s ease-in-out;
 }
 .navbarButtons .button2 h1 {
@@ -159,7 +159,7 @@ nav svg {
   opacity: 1;
   bottom: 50%;
   transition: 0.2s 0.23s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+} */
 
 @media only screen and (max-width: 768px) {
   nav {
